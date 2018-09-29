@@ -25,7 +25,7 @@ class XywySpiderSpider(scrapy.Spider):
 
     def parse(self, response):
         # question = response.xpath("//div[@class='User_askcon clearfix pr']//div[@class='graydeep User_quecol pt10 mt10']/text()").extract_first()
-        answers = response.xpath("//div[@class='docall clearfix ']//div[@class='pt15 f14 graydeep  pl20 pr20']/text()").extract()
+        answers = response.xpath("//div[@class='docall clearfix ']//div[@class='pt15 f14 graydeep  pl20 pr20 deepblue']/text()").extract()
         url = response.url
         _id = url.split("/")[-1].replace(".htm", "")
 
